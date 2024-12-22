@@ -1,0 +1,9 @@
+.button {
+    -fx-background-color: #B6D7A8;
+    -fx-text-fill: #D0366C;
+}
+
+.text-area {
+    -fx-background-color: #F2F2F2;
+    -fx-text-fill: #D0366C;
+}

@@ -1,0 +1,31 @@
+/* Основные цвета */
+.root {
+    -fx-background-color: #ffffff; /* Белый фон */
+}
+
+.button {
+    -fx-background-color: #ff66b2; /* Розовый цвет */
+    -fx-text-fill: #ffffff; /* Белый текст */
+    -fx-font-size: 16px;
+    -fx-padding: 10 20;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-font-family: "Arial";
+}
+
+.button:hover {
+    -fx-background-color: #ff3385; /* Тёмно-розовый цвет при наведении */
+}
+
+.label {
+    -fx-text-fill: #ff66b2; /* Розовый цвет текста */
+    -fx-font-size: 14px;
+}
+
+.text-field {
+    -fx-background-color: #ffe6f0; /* Светло-розовый фон для полей ввода */
+    -fx-text-fill: #ff66b2; /* Розовый текст */
+    -fx-font-size: 14px;
+    -fx-border-color: #ff66b2;
+    -fx-border-radius: 5;
+}
