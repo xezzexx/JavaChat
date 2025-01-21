@@ -66,3 +66,37 @@ tasks.register('buildAll') {
 tasks.build {
     dependsOn 'buildAll'
 }
+
+tasks.register('runClient') {
+    group = 'application'
+    description = 'Запуск клиента'
+    dependsOn 'shadowJarClient'
+    doLast {
+        javaexec {
+            mainClass.set('org.mainchat.LauncherApp')
+            classpath = sourceSets.main.runtimeClasspath
+            jvmArgs = ['--module-path', configurations.runtimeClasspath.asPath, '--add-modules', 'javafx.controls,javafx.fxml']
+        }
+    }
+}
+
+tasks.register('runServer') {
+    group = 'application'
+    description = 'Запуск сервера'
+    dependsOn 'shadowJarServer'
+    doLast {
+        javaexec {
+            mainClass.set('org.mainchat.LauncherServer')
+            classpath = sourceSets.main.runtimeClasspath
+            jvmArgs = ['--module-path', configurations.runtimeClasspath.asPath, '--add-modules', 'javafx.controls,javafx.fxml']
+        }
+    }
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDirs = ['src/main/resources']
+        }
+    }
+}
