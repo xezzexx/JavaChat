@@ -1,0 +1,51 @@
+/* Основные цвета */
+.root {
+    -fx-background-color: #ffffff; /* Белый фон */
+}
+
+.button {
+    -fx-background-color: #ff66b2; /* Розовый цвет */
+    -fx-text-fill: #ffffff; /* Белый текст */
+    -fx-font-size: 16px;
+    -fx-padding: 10 20;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-font-family: "Arial";
+}
+
+.button:hover {
+    -fx-background-color: #ff3385; /* Тёмно-розовый цвет при наведении */
+}
+
+.label {
+    -fx-text-fill: #ff66b2; /* Розовый цвет текста */
+    -fx-font-size: 14px;
+}
+
+.text-field {
+    -fx-background-color: #ffe6f0; /* Светло-розовый фон для полей ввода */
+    -fx-text-fill: #ff66b2; /* Розовый текст */
+    -fx-font-size: 14px;
+    -fx-border-color: #ff66b2;
+    -fx-border-radius: 5;
+}
+
+/* Стиль для текста в окне ошибки */
+.alert .label {
+    -fx-text-fill: #ff66b2; /* Розовый цвет для текста */
+}
+
+.alert .content {
+    -fx-text-fill: #ff66b2; /* Розовый цвет для контента */
+}
+
+/* Стиль для VBox */
+.vbox-layout {
+    -fx-padding: 20; /* Отступы */
+    -fx-alignment: center; /* Выравнивание по центру */
+}
+
+/* Стиль для жирного текста в метках */
+.bold-label {
+    -fx-font-weight: bold; /* Жирный шрифт */
+}
